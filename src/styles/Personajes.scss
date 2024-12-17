@@ -1,0 +1,190 @@
+/* Estilos generales encapsulados */
+.character-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.character-section .title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: black; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.character-section .character-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columnas por fila */
+  gap: 20px;
+}
+
+.character-section .character-card {
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: black;
+}
+
+.character-section .character-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.character-section .character-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  max-height: 200px;
+  object-fit: contain;
+}
+
+.character-section .character-name {
+  font-size: 1.9rem;
+  margin-top: 15px;
+  color: black; /* Texto blanco */
+}
+
+.character-section .character-details {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: black; /* Texto blanco */
+  opacity: 0.8;
+}
+
+.character-section .pagination {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.character-section .btn:disabled {
+  background-color: rgba(242, 90, 37, 0.4); /* Fondo transparente */
+  cursor: not-allowed;
+}
+
+.character-section .btn {
+  padding: 12px 20px;
+  background-color: rgba(242, 90, 37, 0.7); /* Fondo transparente */
+  border: none;
+  border-radius: 5px;
+  margin: 0 15px;
+  color: white; /* Texto blanco */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.character-section .btn:hover {
+  background-color: rgba(242, 90, 37, 1);
+}
+
+.character-section a {
+  text-decoration: none;
+  color: white; /* Texto blanco */
+}
+
+/* Responsive */
+@media screen and (max-width: 1200px) {
+  .character-section .title {
+    font-size: 2.2rem;
+  }
+
+  .character-section .character-grid {
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  }
+
+  .character-section .character-card {
+    padding: 18px;
+  }
+
+  .character-section .character-name {
+    font-size: 1.7rem;
+  }
+
+  .character-section .character-details {
+    font-size: 1.1rem;
+  }
+
+  .character-section .btn {
+    padding: 10px 18px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .character-section .character-grid {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  }
+
+  .character-section .character-name {
+    font-size: 1.6rem;
+  }
+
+  .character-section .character-details {
+    font-size: 1.1rem;
+  }
+
+  .character-section .btn {
+    padding: 10px 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .character-section .container {
+    padding: 10px;
+  }
+
+  .character-section .title {
+    font-size: 1.8rem;
+  }
+
+  .character-section .character-grid {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 15px;
+  }
+
+  .character-section .character-card {
+    padding: 12px;
+  }
+
+  .character-section .character-name {
+    font-size: 1.5rem;
+  }
+
+  .character-section .character-details {
+    font-size: 1rem;
+  }
+
+  .character-section .btn {
+    padding: 10px 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .character-section .title {
+    font-size: 1.6rem;
+  }
+
+  .character-section .character-grid {
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    gap: 10px;
+  }
+
+  .character-section .character-card {
+    padding: 8px;
+  }
+
+  .character-section .character-name {
+    font-size: 1.3rem;
+  }
+
+  .character-section .character-details {
+    font-size: 0.95rem;
+  }
+
+  .character-section .btn {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,152 @@
+/* Contenedor principal */
+.container {
+  padding: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Título del personaje */
+.title {
+  text-align: center;
+  color: #037bc0;
+  font-size: 3rem; /* Título más grande */
+  font-family: 'Raleway', sans-serif;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+/* Detalles del personaje */
+.character-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.character-image-detail {
+  height: 400px;
+  width: 400px;
+  object-fit: contain;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.origin-planet-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo de los párrafos */
+p {
+  font-size: 18px;
+  margin: 10px 0;
+  font-family: 'Raleway', sans-serif;
+  color: white;
+}
+
+/* Sección de transformaciones */
+.transformations {
+  margin-top: 40px;
+  text-align: center;
+  color: white;
+}
+
+.splide {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.splide__slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.splide__slide img {
+  width: 100%;
+  height: 100%;
+  max-width: 400px;
+  max-height: 400px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.splide__pagination {
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.splide__arrow {
+  background-color: orange;
+  color: white;
+  padding: 12px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.splide__arrow:hover {
+  background-color: orange;
+}
+
+.splide__arrow--prev {
+  left: 10px;
+}
+
+.splide__arrow--next {
+  right: 10px;
+}
+
+/* Item de transformación */
+.transformation-item {
+  text-align: center;
+}
+
+.transformation-item p {
+  margin-top: 10px;
+  font-size: 18px;
+  color: white;
+  font-weight: 600;
+}
+
+/* Estilos para dispositivos pequeños */
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .character-detail {
+    flex-direction: column;
+  }
+
+  .splide {
+    max-width: 90%;
+  }
+
+  .splide__pagination {
+    bottom: -20px;
+  }
+
+  .splide__arrow {
+    padding: 8px;
+  }
+
+  .character-image-detail {
+    width: 300px;
+    height: 300px;
+  }
+
+  .origin-planet-image {
+    width: 150px;
+    height: 150px;
+  }
+}

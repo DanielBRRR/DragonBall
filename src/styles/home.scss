@@ -1,0 +1,180 @@
+
+ 
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.inicio-container {
+  text-align: center;
+  padding: 20px;
+  font-family: "Arial", sans-serif;
+  background-color: transparent;
+}
+
+.header {
+  background-color: transparent;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  font-size: 1.6rem;
+  margin-top: 10px;
+  color: black;
+}
+
+.intro-section {
+  margin: 50px 0;
+  text-align: center;
+}
+
+.description {
+  font-size: 1.2rem;
+  color: black;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.cta-container {
+  margin-top: 30px;
+}
+
+.cta-btn {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  background-color: #f25a25;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: #d14f1c;
+}
+
+/* Estilos Responsivos */
+@media screen and (max-width: 1200px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1.4rem;
+  }
+
+  .description {
+    font-size: 1.1rem;
+  }
+
+  .cta-btn {
+    padding: 12px 25px;
+    font-size: 1.1rem;
+  }
+
+  .video-wrapper {
+    padding-bottom: 56.25%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .subtitle {
+    font-size: 1.3rem;
+  }
+
+  .description {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  .cta-btn {
+    padding: 12px 20px;
+    font-size: 1rem;
+  }
+
+  .video-wrapper {
+    padding-bottom: 56.25%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 1.6rem;
+  }
+
+  .subtitle {
+    font-size: 1.2rem;
+  }
+
+  .description {
+    font-size: 0.95rem;
+    padding: 0 20px;
+  }
+
+  .cta-btn {
+    padding: 10px 15px;
+    font-size: 1rem;
+  }
+
+  .video-wrapper {
+    padding-bottom: 56.25%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .title {
+    font-size: 1.4rem;
+  }
+
+  .subtitle {
+    font-size: 1.1rem;
+  }
+
+  .description {
+    font-size: 0.9rem;
+    padding: 0 15px;
+  }
+
+  .cta-btn {
+    padding: 10px 12px;
+    font-size: 0.95rem;
+    width: 100%;
+  }
+
+  .video-wrapper {
+    padding-bottom: 56.25%;
+  }
+}

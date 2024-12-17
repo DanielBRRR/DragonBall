@@ -1,0 +1,137 @@
+.app {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: white;
+  }
+  body{
+    margin: 0;
+    background-image: url("../components/img/Fondo.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  /* Fondo aplicado al contenido principal */
+  .main-content {
+
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+/* Estilos comunes */
+header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  
+    .menu {
+      display: inline;
+      flex-wrap: wrap;
+  
+      a {
+        margin: 5px;
+        text-decoration: none; 
+        color: inherit;        
+        padding: 0.5rem 1rem;  
+        border-radius: 5px;   
+        transition: background-color 0.3s, color 0.3s;
+      }
+    }
+    
+    select {
+      font-size: 16px;
+      border: 1px solid orange;
+      border-radius: 4px;
+      background-color: transparent;
+      cursor: pointer;
+      width: 200px; 
+      margin: 10px auto;
+      display: block; 
+    }
+    
+    select:focus {
+      border-color: orange;
+      outline: none; 
+    }
+  }
+  
+  /* Responsive */
+  @media screen and (max-width: 1200px) {
+    header {
+      padding: 10px;
+    }
+  
+    select {
+      width: 150px;
+      font-size: 14px;
+    }
+  
+    .menu a {
+      font-size: 14px;
+      padding: 0.4rem 0.8rem;
+    }
+  }
+  
+  @media screen and (max-width: 992px) {
+    header {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .menu {
+      display: flex;
+      justify-content: flex-end;
+    }
+  
+    .menu a {
+      margin: 0 10px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    header {
+      flex-direction: column;
+      padding: 10px;
+    }
+  
+    .menu {
+      width: 100%;
+      display: block;
+      text-align: center;
+    }
+  
+    .menu a {
+      display: block;
+      margin: 10px 0;
+    }
+  
+    select {
+      width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    select {
+      font-size: 14px;
+      width: 90%;
+    }
+  
+    .menu a {
+      font-size: 12px;
+      padding: 0.3rem 0.6rem;
+    }
+  }
+  
+  /* Aquí se importan los archivos .scss existentes */
+  @import "./Personajes.scss";
+  @import "./DetallePersonajes.scss";
+  @import "./home.scss";
+  @import "./Planetas.scss";
+  @import "./DetallePlaneta.scss";
+  @import "./Femenino.scss";
+  @import "./Maculino.scss";
+  @import "./Raza.scss";
+  

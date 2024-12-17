@@ -1,0 +1,135 @@
+.planet-details {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  color: black;
+}
+
+.planet-header h1 {
+  font-size: 2.5rem;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.planet-content {
+  align-items: center;
+  gap: 20px;
+}
+
+.planet-image {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.planet-info {
+  font-size: 1.2rem;
+  text-align: left;
+  background-color: transparent;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.planet-info p {
+  margin: 10px 0;
+  color: #fff;
+}
+
+.planet-characters {
+  margin-top: 30px;
+}
+
+.planet-characters h2 {
+  font-size: 2rem;
+  color: #000;
+  margin-bottom: 15px;
+}
+
+.character-grid {
+  justify-content: center;
+  gap: 20px;
+  flex-direction: row;
+}
+
+.character-card {
+  text-align: center;
+  background-color: transparent;
+}
+
+.character-image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.character-name {
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.back-button {
+  padding: 10px 15px;
+  background-color: #f25a25;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  margin-left: 45%;
+}
+
+.back-button:hover {
+  background-color: #d1441c;
+}
+
+@media screen and (max-width: 768px) {
+  .planet-header h1 {
+    font-size: 2rem;
+  }
+
+  .planet-info {
+    font-size: 1rem;
+  }
+
+  .planet-image {
+    width: 80%;
+    max-width: 250px;
+  }
+
+  .planet-characters h2 {
+    font-size: 1.5rem;
+  }
+
+  .character-grid {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .back-button {
+    margin-left: 35%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .planet-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .planet-info {
+    font-size: 0.9rem;
+  }
+
+  .planet-image {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .planet-characters h2 {
+    font-size: 1.2rem;
+  }
+
+  .back-button {
+    margin-left: 30%;
+  }
+}
