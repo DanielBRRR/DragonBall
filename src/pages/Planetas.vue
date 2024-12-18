@@ -31,14 +31,14 @@
         @click="loadPreviousPage"
         class="btn"
       >
-        {{ $t('planetas.pagePrev') }}
+        {{ $t('Pagina Anterior') }}
       </button>
       <button 
         :disabled="!nextPage"
         @click="loadNextPage"
         class="btn"
       >
-        {{ $t('planetas.pageNext') }}
+        {{ $t('Pagina Siguiente') }}
       </button>
     </div>
   </div>

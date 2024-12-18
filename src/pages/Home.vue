@@ -9,7 +9,7 @@
     <!-- Imagen de fondo y mensaje -->
     <div class="intro-section">
       <div class="video-wrapper">
-        <video autoplay muted loop class="video-background">
+        <video controls autoplay muted loop>
           <source
             src="../components/img/Dragon Ball Super Opening 2 en ESPAÑOL LATINO [Oficial] Full HD ((stereo)) Pascual Reyes, GTXS..mp4"
             type="video/mp4" />
